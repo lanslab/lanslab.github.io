@@ -4,6 +4,8 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   images: { unoptimized: true },
+  outputFileTracingRoot: process.cwd(),
+  turbopack: { root: process.cwd() },
 };
 
 export default nextConfig;

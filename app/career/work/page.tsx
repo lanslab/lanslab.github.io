@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Footer, PageIntro, SiteNav } from "../site-components";
+import { Footer, PageIntro, SiteNav } from "../../site-components";
 
 export const metadata: Metadata = { title: "Selected Work | Fanglan Shi", description: "Sanitized People Operations, controls, data and AI transformation case studies." };
 

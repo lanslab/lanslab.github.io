@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Footer, PageIntro, SiteNav } from "../site-components";
+import { Footer, PageIntro, SiteNav } from "../../site-components";
 
 export const metadata: Metadata = { title: "Profile | Fanglan Shi", description: "Education, CHRP credential, capabilities, tools and working method." };
 

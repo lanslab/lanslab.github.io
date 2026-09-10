@@ -1,13 +1,13 @@
 const navigation = [
-  { key: "home", href: "/", label: "Home" },
-  { key: "work", href: "/work", label: "Work" },
-  { key: "experience", href: "/experience", label: "Experience" },
-  { key: "profile", href: "/profile", label: "Profile" },
+  { key: "home", href: "/career", label: "Home" },
+  { key: "work", href: "/career/work", label: "Work" },
+  { key: "experience", href: "/career/experience", label: "Experience" },
+  { key: "profile", href: "/career/profile", label: "Profile" },
 ];
 
 export function SiteNav({ current }: { current: string }) {
   return <nav className="site-nav shell" aria-label="Primary navigation">
-    <a className="wordmark" href="/" aria-label="Fanglan Shi, home">FANGLAN <span>/</span> SHI</a>
+    <a className="wordmark" href="/career" aria-label="Fanglan Shi, career portfolio home">FANGLAN <span>/</span> SHI</a>
     <div className="nav-pages">{navigation.map((item) => <a className={current === item.key ? "active" : ""} href={item.href} key={item.key}>{item.label}</a>)}</div>
     <a className="nav-contact" href="https://www.linkedin.com/in/fanglanshi" target="_blank" rel="noreferrer">Connect <span aria-hidden="true">↗</span></a>
   </nav>;
